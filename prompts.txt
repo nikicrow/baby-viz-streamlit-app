@@ -1,0 +1,4 @@
+# 100% stacked bar chart
+write python code to create a 100% stacked bar chart. Your input is three columns. One column is called 'side' and this has string values 'right' or 'left' which will be how the bar is divided. The second input is called 'duration' which has a random integer between 1 and 60. The last input column is called 'days_since_birth' which is the x axis column and a range between 2 and 217. Use streamlit and plotly.
+# multiple line chart
+Write a python function to create a line chart using plotly and streamlit. It has an x axis which is an integer ranging from 1 to 200. There are 2 lines in this line chart named 'right' and 'left' and the y axis values range from 0.5 to 7. Add a legend, x and y axis titles and a chart title.
