@@ -41,7 +41,7 @@ create_bar_chart_with_rolling_average(total_sleep_data['days_since_birth'],total
                                       'Days since birth','Total sleep duration (hours)',
                                       'Total sleep duration per day vs days since birth',14)
 
-st.header('How long are her naps? How have her naps changed over time?')
+st.subheader('How long are her naps? How have her naps changed over time?')
 
 # get average nap duration without night sleeps
 nap_data = ember_sleep_df[ember_sleep_df['night_sleep'] == False][['days_since_birth', 'hours_duration']].groupby('days_since_birth').mean()
@@ -68,7 +68,7 @@ create_boxplot(nap_month_data,
                'Nap duration in hours by month')
 
 
-st.header('How long does she stay awake between naps (wake windows)?')
+st.subheader('How long does she stay awake between naps (wake windows)?')
 
 # get wake window data
 wake_month_data = ember_sleep_df[ember_sleep_df['night_sleep'] == False][['months_since_birth', 'wake_window_hours']]
