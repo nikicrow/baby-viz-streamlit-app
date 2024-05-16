@@ -34,6 +34,20 @@ def create_bar_chart(x,y,
     fig = px.bar(df, x=x_colname, y=y_colname, labels={x_colname: x_title, y_colname: y_title}, title=title)
     st.plotly_chart(fig)
 
+def create_scatter_plot(x,y,
+                        x_colname,y_colname,
+                        x_title,y_title,
+                        title):
+    df = pd.DataFrame(x).join(pd.DataFrame(y))
+    fig = px.scatter(df,x=x_colname, y=y_colname, labels={x_colname: x_title, y_colname: y_title}, title=title)
+    fig.update_layout(legend=dict(
+        orientation="h",
+        yanchor="top",
+        y=1.1,
+        xanchor="right",
+        x=1
+    ))
+    st.plotly_chart(fig)
 
 def create_scatter_plot_with_rolling_average(x,y,
                                           x_colname,y_colname,

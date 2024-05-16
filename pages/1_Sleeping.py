@@ -13,7 +13,6 @@ from visualisation_functions import (create_bar_chart_with_rolling_average,
 
 st.title('Sleep data visualisations')
 
-import streamlit as st
 from PIL import Image
 
 # 24 hour visualisation of all her sleeps
